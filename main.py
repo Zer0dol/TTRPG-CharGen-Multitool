@@ -19,7 +19,7 @@ tkinter.Grid.columnconfigure(window, 1, weight=1)
 label = tkinter.Label(window,text="Tabletop RPG Character Generation Multitool", font=("Arial", 32), fg="White", bg="#1e1e20", pady=50)
 label.grid(row=0, column=0, columnspan=2, sticky="n")
 
-LogoHeight = window_height // 4
+LogoHeight = window_height // 4 #Theese are placeholders. This will be like that until I figure out how to make button images update dynamically with window resolution
 LogoWidth = LogoHeight * 2
 
 Shadowrun_5E_Orig_Image = Image.open("img/Shadowrun_5E_Logo.png")

@@ -1,0 +1,55 @@
+﻿<Page x:Class="WPFTTRPGCharGen.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFTTRPGCharGen.Pages"
+      mc:Ignorable="d" 
+      d:DesignWidth="1280" d:DesignHeight="720"
+      Title="MenuPage"
+      Background="#1e1e20">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="1" Grid.Row="1"
+               FontFamily="Segoe UI Bold" FontSize="32"
+               HorizontalAlignment="Center"
+               Grid.ColumnSpan="3"
+               Foreground="White">
+            Tabletop RPG Character Creation Tool
+        </Label>
+        <Button Grid.Column="1" Grid.Row="2"
+                x:Name="ShadowrunButton"
+                Style="{StaticResource ImageButton}" Click="ShadowrunButton_Click">
+            <Image Style="{StaticResource Shadowrun5EButton}"/>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="2"
+                x:Name="DnDButton"
+                Style="{StaticResource ImageButton}" Click="DnDButton_Click">
+            <Image Style="{StaticResource DnDButton}"/>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="4"
+                x:Name="CyberpunkButton"
+                Style="{StaticResource ImageButton}" Click="CyberpunkButton_Click">
+            <Image Style="{StaticResource CyberpunkButton}"/>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="4"
+                x:Name="WoDButton"
+                Style="{StaticResource ImageButton}" Click="WoDButton_Click">
+            <Image Style="{StaticResource WoDButton}"/>
+        </Button>
+    </Grid>
+</Page>
